@@ -1,0 +1,29 @@
+<!-- /*********************************************************************************
+* WEB322 – Assignment 04
+* I declare that this assignment is my own work in accordance with Seneca Academic Policy. No part
+* of this assignment has been copied manually or electronically from any other source
+* (including 3rd party web sites) or distributed to other students.
+*
+* Name: Sue Ming Chun Student ID: 032343154 Date: Monday, November 6, 2018
+*
+* Online (Heroku) Link: https://radiant-ocean-52723.herokuapp.com/
+*
+********************************************************************************/
+-->
+
+<div class="row">
+    <div class="col-md-12">
+        <h2>Images</h2>
+        <hr />
+    </div> 
+    {{#each items}}
+    <div class="col-md-4">
+        <img src="/images/uploaded/{{this}}" class="img-responsive img-thumbnail" />
+    </div>
+    {{else}}
+    <div class="col-md-12 text-center">
+        <strong>No Images Available</strong>
+    </div>
+</div>
+{{/each}}
+
